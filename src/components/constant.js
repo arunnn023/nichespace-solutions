@@ -213,7 +213,6 @@ export const logos = [
   "/logo-3.svg",
   "/logo-7.png",
   "/logo-9.png",
-  "/logo-10.png",
   "/logo-11.svg",
 
 ];
@@ -238,7 +237,7 @@ export const teamMembers = [
     summary: 'Nandini leads the technical team in implementing cutting-edge solutions to drive business success.',
   },
   {
-    name: 'B KIRAN KUMAR',
+    name: 'B SANTHOSH KUMAR',
     title: 'Head of HR',
     image: '/image-hr1.png',
     summary:'Kiran brings extensive expertise in human resource management.',

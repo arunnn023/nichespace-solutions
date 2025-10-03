@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FaFacebookF,
   FaInstagram,
@@ -12,7 +12,7 @@ export function FooterSection() {
   const [showForm, setShowForm] = useState(false);
   const [result, setResult] = useState("");
 
-    useEffect(() => {
+  useEffect(() => {
     const shouldOpen = localStorage.getItem('openContactForm');
     if (shouldOpen === 'true') {
       setShowForm(true);
@@ -29,7 +29,7 @@ export function FooterSection() {
     event.preventDefault();
     setResult("Sending...");
     const formData = new FormData(event.target);
-    formData.append("access_key", "69e0a273-f5a4-4be3-88e4-5f18750fd02a");
+    formData.append("access_key", "32d6b688-6be8-4e38-9b16-6cf2ec1bb1a9");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -51,17 +51,17 @@ export function FooterSection() {
 
   return (
     <motion.footer
-    
-    initial={{opacity:0, x:200}}
-     transition={{duration: 1}}
-     whileInView={{opacity: 1, x:0}}
-     viewport={{once:true}} 
-    
-    
-    
-    
-    
-    id="contact" className="bg-green-900 text-white pt-8">
+
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+
+
+
+
+
+      id="contact" className="bg-green-900 text-white pt-8">
       {/* CTA Section */}
       <div className="text-center px-4 sm:px-6 lg:px-12 mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
@@ -110,6 +110,14 @@ export function FooterSection() {
                 placeholder="Your email"
               />
             </div>
+            <div className='my-6 text-left'>
+              Text Message
+
+              <textarea className='w-full border border-gray-300 rounded py-3
+            px-4 mt-2 h-48 resize-none'
+                name="Message" placeholder='Enter Your Text' required ></textarea>
+
+            </div>
             <button
               type="submit"
               className="bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300"
@@ -129,11 +137,11 @@ export function FooterSection() {
         <div>
           <div className="flex items-center gap-2 mb-2">
             <img
-                src="/footer-log.png" // adjust path based on your project
-                alt="NicheSpace Logo"
-                className="h-8 w-auto"
-                loading="lazy"
-/>
+              src="/footer-log.png" // adjust path based on your project
+              alt="NicheSpace Logo"
+              className="h-8 w-auto"
+              loading="lazy"
+            />
 
           </div>
           <p className="text-white/80 mb-4">
