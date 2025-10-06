@@ -211,12 +211,19 @@ export const services = [
 
 export const logos = [
   "/logo-3.svg",
-  "/logo-7.png",
-  "/logo-9.png",
   "/logo-11.svg",
-
+  "/wipro-1.svg",
+  "/ibm.svg",
+  "/hp-5.svg",
 ];
 
+export const logos2 = [
+  "/logo-3.svg",
+  "/logo-11.svg",
+  "/wipro-1.svg",
+  "/ibm.svg",
+  "/hp-5.svg",
+];
 export const teamMembers = [
   {
     name: ' PUJARI HEMANTH KUMAR',
@@ -240,7 +247,7 @@ export const teamMembers = [
     name: 'B SANTHOSH KUMAR',
     title: 'Head of HR',
     image: '/image-hr1.png',
-    summary:'Kiran brings extensive expertise in human resource management.',
+    summary:'Santhosh brings extensive expertise in human resource management.',
   },
   {
     name: 'P RADHA KRISHNA',
